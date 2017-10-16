@@ -1,0 +1,56 @@
+# Page Objects
+
+#Menu bar
+img_logo =//*[@id="logo"]
+slogan =//*[@id="slogan"]
+link_home =//*[@id="secondary-menu"]/li[1]/a
+contact_us = //*[@id="secondary-menu"]/li[3]/a
+
+#SPECIAL OFFERS
+special_items_img = //*[@id="special-items"]/div/a/img[@alt='{item_name}']
+special_items_txt_link = //*[@id="special-items"]/div/h4/a[normalize-space()='{item_name}']
+special_items_btn_Add_to_cart = //*[@id="special-items"]/div/h4/a[normalize-space()='{item_name}']/../../div/a[1]
+special_items_btn_info = //*[@id="special-items"]/div/h4/a[normalize-space()='{item_name}']/../../div/a[2]
+
+special_items_popUp_btn_add_to_cart = //*[@id="special-items"]/div/div[2]/div/div/h2/a[normalize-space()='{item_name}']/../../form/input[@type='submit']
+
+#RECENT PRODUCTS
+main_products_img = //*[@id="main-products"]/div/a/img[@alt='{item_name}']
+main_products_txt_link = //*[@id="main-products"]/div/h4/a[normalize-space()='{item_name}']
+main_products_btn_Add_to_cart = //*[@id="main-products"]/div/h4/a[normalize-space()='{item_name}']/../../div/a[1]
+main_products_btn_info = //*[@id="main-products"]/div/h4/a[normalize-space()='{item_name}']/../../div/a[2]
+
+main_products_popUp_btn_add_to_cart = //*[@id='fancybox-content']/div[1]/div/div/h2/a[normalize-space()='{item_name}']/../../form/input[@type='submit']
+
+#View Product
+view_cart_link = //*[@id="Cart66AdvancedSidebarAjax"]/div/a[1]
+view_Item_add_to_cart = //*[@id="main-products"]/div[1]/div[2]/a
+view_Item_remove_item = //*[@id="viewCartTable"]/tbody/tr/td[normalize-space()='{item_name}']/../td/a/img
+view_item_continueShopping = //*/a[normalize-space()='Continue Shopping']
+view_item_update_total = //*[@id="viewCartTable"]/tbody/tr/td/input[@name='updateCart']
+view_item_checkout=//*[@id="Cart66CheckoutButton"]
+
+#SUBMIT A COMMENT
+
+comment_name = //*[@id="author"]
+comment_email = //*[@id="email"]
+comment_url = //*[@id="url"]
+#Rate 1 - 5
+comment_rate =//*[@id="et-rating"]/div/span/div/a[normalize-space()='{item_name}']
+comment_txt_area=//*[@id="comment"]
+comment_submit = //*[@id="submit"]
+
+#Contact Us
+
+contact_name = //*[@id="wpcf7-f61-p59-o1"]/form/p[1]/span/input
+contact_email = //*[@id="wpcf7-f61-p59-o1"]/form/p[2]/span/input
+contact_subject = //*[@id="wpcf7-f61-p59-o1"]/form/p[3]/span/input
+contact_message = //*[@id="wpcf7-f61-p59-o1"]/form/p[4]/span/textarea
+contact_sent = //*[@id="wpcf7-f61-p59-o1"]/form/p[5]/input
+
+#Checkout
+
+checkout_btn_purchase = //*[@id="go"]
+
+
+
